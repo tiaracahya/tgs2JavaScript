@@ -1,0 +1,116 @@
+* {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 18px;
+  }
+  
+  body {
+    background-color: #fdeff4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #d36b8a;
+  }
+  
+  .form-container {
+    width: 70%;
+    margin: auto;
+    background: #fff0f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #f4c2c2;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    border: 1px solid #f4c2c2;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  thead {
+    background-color: #f7b6c2;
+    color: #fff;
+  }
+  
+  tfoot {
+    background-color: #ffe6ea;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #ffeef2;
+    transition: 0.3s;
+  }
+  
+  /* Tombol */
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+  }
+  
+  .btn.tambah {
+    background-color: #f7b6c2;
+    color: white;
+  }
+  
+  .btn.tambah:hover {
+    background-color: #e799ad;
+  }
+  
+  .btn.reset {
+    background-color: #f4c2c2;
+    color: white;
+  }
+  
+  .btn.reset:hover {
+    background-color: #e6a5a5;
+  }
+  
+  .hapus-btn {
+    background-color: #f28b82;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .hapus-btn:hover {
+    background-color: #e57373;
+  }
+  
+  /* Animasi fade-in */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  

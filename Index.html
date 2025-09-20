@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tugas 2 Javascript</title>
+    <!-- Panggil CSS dari folder css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Form Data Pegawai</h1>
+    <div class="form-container">
+      <label>Nama Pegawai:</label><br />
+      <input type="text" id="nama" placeholder="Masukkan nama pegawai" /><br /><br />
+
+      <label>Umur:</label><br />
+      <input type="number" id="umur" placeholder="Masukkan umur" /><br /><br />
+
+      <label>Jabatan:</label><br />
+      <select id="jabatan">
+        <option value="manajer">Manajer</option>
+        <option value="asisten manajer">Asisten Manajer</option>
+        <option value="staff">Staff</option>
+      </select><br /><br />
+
+      <label>Status:</label><br />
+      <select id="status">
+        <option value="menikah">Menikah</option>
+        <option value="belum menikah">Belum Menikah</option>
+      </select><br /><br />
+
+      <button onclick="tambahData()" class="btn tambah">Tambah Data</button>
+      <button onclick="resetTabel()" class="btn reset">Reset Tabel</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama Pegawai</th>
+          <th>Umur</th>
+          <th>Jabatan</th>
+          <th>Status</th>
+          <th>Gaji Pokok</th>
+          <th>Tunjangan Jabatan</th>
+          <th>BPJS</th>
+          <th>Tunjangan Keluarga</th>
+          <th>Total Gaji</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="dataPegawai"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="9" style="text-align: right"><b>Total Gaji Semua Pegawai</b></td>
+          <td colspan="2" id="totalGaji"></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Panggil JS dari folder js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
